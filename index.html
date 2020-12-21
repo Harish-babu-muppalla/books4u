@@ -14,23 +14,46 @@
 </head>
 
 <body>
+<div>
 	<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
 		<div class="container">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
 			<span class="navbar-toggler-icon"> </span>
 		</button>
 			<a class ="navbar-brand mr-auto" href="#"><img src="logo.jpg" height="40" width="51"> </a>
-			<div class="collapse navbar-collapse" id="Navbar">
+			
+			<div class="collapse navbar-collapse" >
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item"><a class="nav-link" href="#">?</a></li>
-				<li class="nav-item "> <a data-toggle="modal" data-target="#loginModal"><span class="navbar-text"> Login</a></span></li>
-				<li class="nav-item"><a class="nav-link" href="#">Wishlist</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">cart</a></li>
+			
 			</ul>
 			
-			</div>
+			</div
+			<a class="nav-item mt-auto "><a data-toggle="modal" data-target="#search" class="d-md-none d-sm-block"><span class="navbar-text"> search</a></span></a>
+			<a class="nav-item mt-auto nav-link" href="#"><span class="navbar-text">Wishlist</span></a>
+			<a class="nav-item mt-auto nav-link" href="#"><span class="navbar-text">cart</span></a>
+			<a class="nav-item mt-auto"> <a data-toggle="modal" data-target="#loginModal"><span class="navbar-text"> Login</a></span></a>
 		</div>
+		
 	</nav>
+	</div>
+	<div class="mt-4 collapse" id="Navbar">
+	<ul class = "list-unstyled">
+		<li>Browse</li>
+		<li>collection</li>
+		<li class="nav-item"><a class="nav-link" href="#">Wishlist</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">cart</a></li>
+					</ul>
+	</div>
+	<div id="search"class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg" role="content">
+	<div class="modal-content">
+	<div class="md-form active-cyan-2 mt-auto nav-item">
+			<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+	</div>
+	</div>
+	</div>
+	</div>
 	<div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
@@ -68,22 +91,24 @@
         </div>
     </div>
 
-    <header class="jumbotron">
+    <header class="mt-4 d-none d-md-block">
+		<nav class="navbar navbar-expand-sm">
         <div class="container">
-            <div>
-                <div>
-                    <ul>
-					<li>Browse</li>
-					<li>collection</li>
+                    <ul class="navbar-nav mr-auto">
+						<li class="nav-item"><a class="nav-link" href="#">Browse</a></li>
+						<li class="nav-item offset-1"><a class="nav-link" href="#">sale</a></li>
+						<li class="nav-item  offset-1"><a class="nav-link" href="#">membership</a></li>
+						<li class="nav-item  offset-1"><a class="nav-link" href="#">collection</a></li>
+						
 					</ul>
-                </div>
-                <div>
-                </div>
-            </div>
+					<div class="md-form active-cyan-2 ml-auto nav-item  ">
+							<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+						</div>
         </div>
+		</nav>
     </header>
 	
-	<div>
+	<div class="mt-2">
 		<div>
 		<h1>carousel</h1>
 		</div>
@@ -115,7 +140,7 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer ">
         <div class="container">
             <div class="row"> 
 				<div class="col-12  col-sm-2 address">
