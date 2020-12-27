@@ -9,6 +9,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 	<link rel = "stylesheet" href="css/styles.css">
     <title>Books4U</title>
 </head>
@@ -21,29 +23,26 @@
 			<span class="navbar-toggler-icon"> </span>
 		</button>
 			<a class ="navbar-brand mr-auto" href="#"><img src="logo.jpg" height="40" width="51"> </a>
-			
-			<div class="collapse navbar-collapse" >
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a class="nav-link" href="#">?</a></li>
-			
-			</ul>
-			
-			</div
-			<a class="nav-item mt-auto "><a data-toggle="modal" data-target="#search" class="d-md-none d-sm-block"><span class="navbar-text"> search</a></span></a>
-			<a class="nav-item mt-auto nav-link" href="#"><span class="navbar-text">Wishlist</span></a>
-			<a class="nav-item mt-auto nav-link" href="#"><span class="navbar-text">cart</span></a>
-			<a class="nav-item mt-auto"> <a data-toggle="modal" data-target="#loginModal"><span class="navbar-text"> Login</a></span></a>
+			<a class="nav-item "><a class="d-none d-md-block nav-link"><span class="fa fa-question fa-lg" style="color:black"></a></span></a>
+			<a class="nav-item "><a data-toggle="modal" data-target="#search" class="d-md-none d-sm-block nav-link"><span class="fa fa-search fa-lg"></a></span></a>
+			<a class="nav-item  "><a class="nav-link" href="#"><span class="fa fa-heart-o fa-lg" style="color:black"></a></span></a>
+			<a class="nav-item "><a class="nav-link" href="#"><span class="fa fa-shopping-cart fa-lg" style="color:black"></a></span></a>
+			<a class="nav-item "> <a data-toggle="modal" data-target="#loginModal" class="nav-link" style="color:black"><span class="fa fa-sign-in fa-lg" ></span> Login</a></a>
 		</div>
 		
 	</nav>
 	</div>
 	<div class="mt-4 collapse" id="Navbar">
-	<ul class = "list-unstyled">
-		<li>Browse</li>
-		<li>collection</li>
-		<li class="nav-item"><a class="nav-link" href="#">Wishlist</a></li>
-		<li class="nav-item"><a class="nav-link" href="#">cart</a></li>
+	<nav class="navbar navbar-expand-sm">
+        <div class="container">
+                    <ul class="navbar-nav mr-auto">
+						<li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Recomended</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">sale</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">membership</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">collection</a></li>
 					</ul>
+		</nav>
 	</div>
 	<div id="search"class="modal fade" role="dialog">
 	<div class="modal-dialog modal-lg" role="content">
@@ -94,25 +93,21 @@
     <header class="mt-4 d-none d-md-block">
 		<nav class="navbar navbar-expand-sm">
         <div class="container">
-                    <ul class="navbar-nav mr-auto">
-						<li class="nav-item"><a class="nav-link" href="#">Browse</a></li>
-						<li class="nav-item offset-1"><a class="nav-link" href="#">sale</a></li>
-						<li class="nav-item  offset-1"><a class="nav-link" href="#">membership</a></li>
-						<li class="nav-item  offset-1"><a class="nav-link" href="#">collection</a></li>
-						
-					</ul>
-					<div class="md-form active-cyan-2 ml-auto nav-item  ">
-							<input class="form-control" type="text" placeholder="Search" aria-label="Search">
-						</div>
+		<div class="row">
+			<div class = "col-2"><a class="nav-item"><a class="nav-link" href="#">Categories</a></a></div>
+			<div class = "col-2"><a class="nav-item"><a class="nav-link" href="#">Recomended</a></a></div>
+			<div class = "col-1"><a class="nav-item"><a class="nav-link" href="#">sale</a></a></div>
+			<div class = "col-2"><a class="nav-item"><a class="nav-link" href="#">membership</a></a></div>
+			<div class = "col-2"><a class="nav-item "><a class="nav-link" href="#">collection</a></a></div>
+			<input class="form-control col-2" type="text" placeholder="Search" id="search" aria-label="Search">
+			<label for="search" class="col align-self-center"><span class="ml-auto fa fa-search fa-lg"></span></label>
+		
+		</div>		
         </div>
 		</nav>
     </header>
 	
-	<div class="mt-2">
-		<div>
-		<h1>carousel</h1>
-		</div>
-	</div>
+	
 	<div>
 		<div>
 		<a><img src="#" alt="Discount books"></a>
@@ -184,12 +179,12 @@
                
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class= "text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
+                          <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
            </div>
