@@ -43,10 +43,10 @@ body{
 .page-heading span:before, .page-heading span:after{
 	 content: "------"
 }
-.card.card-grey {
+.card-grey {
     border: 1px solid #999;
 }
-.card.card-grey .card-title {
+.card-title {
     background-color: #999;
     text-transform: uppercase;
     font-weight: bold;
@@ -54,12 +54,22 @@ body{
     padding: 10px 15px;
     margin-bottom: 0;
 	color: white;
-}
-.card-title {
-    font-size: 16px;
+	font-size: 16px;
     margin: 0;
-	
 }
+
 .card-body{
 	text-align : center;
+}
+
+.modal-header{
+	background-color: #512DA8;
+	color: floralwhite;
+}
+
+.modal-header button{
+	color: floralwhite
+}
+.modal-body{
+	background-color: #ddd;
 }
