@@ -1,75 +1,65 @@
-body{
-	padding:0px 0px 0px 0px;
-	z-index : 0;
-}
-.footer{
-	background-color: #D1C4E9;
-	margin:0px auto;
-	padding: 20px 0px 20px 0px;
-}
-.address{
-		font-size: 80%;
-		margin: 0px;
-		color: #0f0f0f;
-}
-.navbar-dark{
-		background-color: #ff5050;
-}
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f; }
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
+
+.navbar-dark {
+  background-color: #ff5050; }
+
 .carousel {
-    background:#512DA8;
-}
+  background: #512DA8; }
+  .carousel .carousel-item {
+    height: 300px; }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px; }
 
-.carousel-item {
-  height: 300px;
-}
-
-.carousel-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 300px;
-}
 #carouselButton {
-    right:0px;
-    position: absolute;
-    bottom: 0px;
-    z-index: 1;
-}
-.page-heading{
-	text-align:center;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-.page-heading span:before, .page-heading span:after{
-	 content: "------"
-}
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1; }
+
+.modal-header {
+  background: #512DA8;
+  color: floralwhite; }
+  .modal-header button {
+    color: floralwhite; }
+
+.modal-body {
+  background: #ddd; }
+
+.page-heading {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .page-heading span:before {
+    content: "------"; }
+  .page-heading span:after {
+    content: "------"; }
+
 .card-grey {
-    border: 1px solid #999;
-}
-.card-title {
+  border: 1px solid #999; }
+  .card-grey .card-title {
     background-color: #999;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     padding: 10px 15px;
     margin-bottom: 0;
-	color: white;
-	font-size: 16px;
-    margin: 0;
-}
-
-.card-body{
-	text-align : center;
-}
-
-.modal-header{
-	background-color: #512DA8;
-	color: floralwhite;
-}
-
-.modal-header button{
-	color: floralwhite
-}
-.modal-body{
-	background-color: #ddd;
-}
+    color: white;
+    font-size: 16px;
+    margin: 0; }
+  .card-grey .card-body {
+    text-align: center; }
